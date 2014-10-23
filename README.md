@@ -38,7 +38,7 @@ A form input builder and validator for Angular JS (NOT YET RELEASED)
 - [Validators](#validators)
 
 ## <a name="background">Background</a>
-I wrote an article on forms and validation with React JS, [Nailing that validation with React JS](), the result of that was an extension to React JS that I reimplemented in Angular JS.
+I wrote an article on forms and validation with React JS, [Nailing that validation with React JS](http://christianalfoni.github.io/javascript/2014/10/22/nailing-that-validation-with-reactjs.html), the result of that was an extension to React JS that I reimplemented in Angular JS.
 
 The main concept is that forms, inputs and validation is done very differently across developers and projects. This extension to Angular JS aims to be that "sweet spot" between flexibility and reusability. Though Angular already has pretty good validation handling for forms it does not handle server requests and responses. It is also scoped to normal input elements. A formsy-input is just a value with validation linked to a form. How you choose to change that value does not matter, you can build anything you want.
 
@@ -213,11 +213,12 @@ Takes a function to run when either a success or error response is received from
 
 #### <a name="onerror">error(serverResponse)</a>
 ```html
-<formsy-form url="/users" error="changeToFormErrorClass"></formsy-form>
+<formsy-form url="/users" error="changeToFormErrorClass()"></formsy-form>
 ```
 Takes a function to run when the server responds with an error http status code.
 
 ### <a name="formsymixin">formsy-input</a>
+So "formsy-input" is an attribute you use when creating your formsy directive to attach it to the form. It has to be set on the "top node" of the template. The first part of this section shows what attributes you can pass to your directive and the second part shows how you build the directive.
 
 #### <a name="name">name</a>
 ```html
