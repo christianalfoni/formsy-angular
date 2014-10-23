@@ -1,7 +1,7 @@
 formsy-angular
 ============
 
-A form input builder and validator for Angular JS (NOT YET RELEASED)
+A form input builder and validator for Angular JS
 
 - [Background](#background)
 - [What you can do](#whatyoucando)
