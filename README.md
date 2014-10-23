@@ -279,9 +279,7 @@ angular.module('MyApp', ['formsy'])
 ```html
 <button type="text" ng-click="setValue()">Flip color</button>
 ```
-The value of the input directive.
-
-#### <a name="geterrormessage">message</a>
+#### <a name="geterrormessage">$message</a>
 In your directive template:
 ```html
 <div>
