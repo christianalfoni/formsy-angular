@@ -1,0 +1,8 @@
+{
+  "name": "formsy-angular",
+  "version": "0.1.0",
+  "main": "src/main.js",
+  "dependencies": {
+    "angular": "^1.3.0"
+  }
+}
